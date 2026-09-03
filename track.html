@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Track Complaint | LokLink</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/track.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">🔗</div>
+
+            <div>
+                <h2>Lok<span>Link</span></h2>
+                <p>Your Locality. Your Voice. Your Government.</p>
+            </div>
+
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="exploreLocality.html">Explore Locality</a>
+            <a href="complaint.html">Complaints</a>
+            <a href="schemes.html">Schemes</a>
+            <a href="track.html" class="active">Track</a>
+            <a href="government.html">How Government Works</a>
+            <a href="about.html">About Us</a>
+        </nav>
+
+        <div class="nav-buttons" id="navButtons">
+            <button class="login-btn" onclick="openLogin()">Login</button>
+            <button class="register-btn" onclick="openRegister()">Register</button>
+        </div>
+
+        <div class="user-pill" id="userPill" style="display: none;">
+            <span class="user-icon">👤</span>
+            <span>Welcome</span>
+        </div>
+
+    </header>
+
+
+    <!-- PAGE HEADER -->
+
+    <section class="page-header">
+
+        <span>COMPLAINT STATUS</span>
+
+        <h1>Track Your Complaint</h1>
+
+        <p>
+            Enter your Complaint ID to see the latest status
+            and progress of your complaint.
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH -->
+
+    <section class="track-search">
+
+        <div class="search-heading">
+
+            <span>TRACK COMPLAINT</span>
+
+            <h2>Enter Your Complaint ID</h2>
+
+        </div>
+
+        <div class="track-input">
+
+            <input
+                type="text"
+                id="complaintId"
+                placeholder="Example: CMP12345">
+
+            <button onclick="trackComplaint()">
+                Track Complaint →
+            </button>
+
+        </div>
+
+        <p class="search-note">
+            Your Complaint ID was provided when you submitted your complaint.
+        </p>
+
+    </section>
+
+
+    <!-- RESULT -->
+
+    <main class="main-content" id="resultSection">
+
+        <!-- COMPLAINT SUMMARY -->
+
+        <section class="complaint-summary">
+
+            <div>
+
+                <span>COMPLAINT DETAILS</span>
+
+                <h2>Complaint #CMP12345</h2>
+
+            </div>
+
+            <div class="status-badge">
+                🟡 Under Review
+            </div>
+
+        </section>
+
+
+        <div class="details-grid">
+
+            <div class="detail-box">
+
+                <small>SUBMITTED ON</small>
+
+                <strong>12 August 2026</strong>
+
+            </div>
+
+            <div class="detail-box">
+
+                <small>CATEGORY</small>
+
+                <strong>Road & Infrastructure</strong>
+
+            </div>
+
+            <div class="detail-box">
+
+                <small>LOCALITY</small>
+
+                <strong>Example Village</strong>
+
+            </div>
+
+            <div class="detail-box">
+
+                <small>DEPARTMENT</small>
+
+                <strong>Local Administration</strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- STATUS TIMELINE -->
+
+        <section class="timeline-section">
+
+            <div class="section-title">
+
+                <span>PROGRESS</span>
+
+                <h2>Complaint Status</h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <!-- STEP 1 -->
+
+                <div class="timeline-item completed">
+
+                    <div class="timeline-icon">
+                        ✓
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>Complaint Submitted</h3>
+
+                        <p>
+                            Your complaint has been successfully submitted.
+                        </p>
+
+                        <small>
+                            12 Aug 2026 • 10:30 AM
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 2 -->
+
+                <div class="timeline-item active-step">
+
+                    <div class="timeline-icon">
+                        🔍
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>Under Review</h3>
+
+                        <p>
+                            Your complaint is currently being reviewed
+                            by the responsible authority.
+                        </p>
+
+                        <small>
+                            12 Aug 2026 • 11:15 AM
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 3 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        🏛️
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>Forwarded to Department</h3>
+
+                        <p>
+                            The complaint will be forwarded to the
+                            relevant department.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 4 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        🔧
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>Action Taken</h3>
+
+                        <p>
+                            The responsible department will work
+                            on the reported issue.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 5 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        ✓
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>Resolved</h3>
+
+                        <p>
+                            The complaint will be marked resolved
+                            after the issue has been addressed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HELP BOX -->
+
+        <section class="help-box">
+
+            <div class="help-icon">
+                💬
+            </div>
+
+            <div>
+
+                <h3>Need Help?</h3>
+
+                <p>
+                    If you believe your complaint has not been
+                    handled correctly, you can contact LokLink support.
+                </p>
+
+            </div>
+
+            <button>
+                Contact Support
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>Lok<span>Link</span></h2>
+
+                <p>
+                    Your Locality.<br>
+                    Your Voice.<br>
+                    Your Government.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Explore</h3>
+
+                <a href="index.html">Home</a>
+                <a href="exploreLocality.html">Locality</a>
+                <a href="complaint.html">Complaints</a>
+                <a href="schemes.html">Schemes</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Services</h3>
+
+                <a href="track.html">Track Complaint</a>
+                <a href="#">How It Works</a>
+                <a href="#">FAQs</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>📧 support@loklink.in</p>
+                <p>📞 +91 98765 43210</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 LokLink. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function trackComplaint() {
+
+            const id = document.getElementById("complaintId").value.trim();
+
+            if (id === "") {
+
+                alert("Please enter your Complaint ID.");
+
+                return;
+            }
+
+            alert(
+                "Complaint found!\n\n" +
+                "Complaint ID: " + id +
+                "\n\nStatus: Under Review"
+            );
+
+        }
+
+    </script>
+
+    <script src="../JS/track.js"></script>
+
+    <script src="../JS/auth.js"></script>
+</body>
+
+</html>
