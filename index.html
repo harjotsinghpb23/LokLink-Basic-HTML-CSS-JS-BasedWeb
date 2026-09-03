@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LokLink | Your Locality. Your Voice.</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">🔗</div>
+
+            <div>
+                <h2>Lok<span>Link</span></h2>
+                <p>Your Locality. Your Voice. Your Government.</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="exploreLocality.html">Explore Locality</a>
+            <a href="complaint.html">Complaints</a>
+            <a href="schemes.html">Schemes</a>
+            <a href="track.html">Track</a>
+            <a href="government.html">How Government Works</a>
+            <a href="about.html">About Us</a>
+        </nav>
+
+        <div class="nav-buttons" id="navButtons">
+    <button class="login-btn" onclick="openLogin()">
+        Login
+    </button>
+
+    <button class="register-btn" onclick="openRegister()">
+        Register
+    </button>
+</div>
+
+<div class="user-pill" id="userPill" style="display: none;">
+    <span class="user-icon">👤</span>
+    <span>Welcome</span>
+</div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="small-heading">
+                YOUR LOCAL GOVERNMENT CONNECTED
+            </span>
+
+            <h1>
+                Your Locality.<br>
+                <span>Your Voice.</span>
+            </h1>
+
+            <p>
+                Discover your locality, understand your government,
+                report problems and find government schemes — all
+                from one place.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="exploreLocality.html" class="primary-btn">
+                    Explore My Locality →
+                </a>
+
+                <a href="complaint.html" class="secondary-btn">
+                    File a Complaint
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <img class="hero-image" src="../Images/happy-community.jpg" alt="Happy people spending time together in their community">
+
+            <h3>
+                Feel connected to your community
+            </h3>
+
+            <p>
+                Find useful local information and make your voice heard.
+            </p>
+
+            <a href="exploreLocality.html">
+                Explore Now →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ACTION SECTION ================= -->
+
+    <section class="actions-section">
+
+        <div class="section-heading">
+
+            <span>
+                EXPLORE LOKLINK
+            </span>
+
+            <h2>
+                What would you like to do?
+            </h2>
+
+            <p>
+                Access important civic services and government
+                information from one place.
+            </p>
+
+        </div>
+
+
+        <div class="action-cards">
+
+
+            <!-- EXPLORE LOCALITY -->
+
+            <div class="action-card">
+
+                <div class="card-icon locality-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Explore Locality
+                </h3>
+
+                <p>
+                    Discover information about your locality,
+                    population, representatives and administration.
+                </p>
+
+                <a href="exploreLocality.html" class="card-btn">
+                    Explore Now →
+                </a>
+
+            </div>
+
+
+            <!-- COMPLAINT -->
+
+            <div class="action-card">
+
+                <div class="card-icon complaint-icon">
+                    📝
+                </div>
+
+                <h3>
+                    File a Complaint
+                </h3>
+
+                <p>
+                    Report local problems such as roads,
+                    water, sanitation, street lights and more.
+                </p>
+
+                <a href="complaint.html" class="card-btn">
+                    File Complaint →
+                </a>
+
+            </div>
+
+
+            <!-- TRACK -->
+
+            <div class="action-card">
+
+                <div class="card-icon track-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Track Complaint
+                </h3>
+
+                <p>
+                    Use your Complaint ID to check the
+                    current status of your complaint.
+                </p>
+
+                <a href="track.html" class="card-btn">
+                    Track Now →
+                </a>
+
+            </div>
+
+
+            <!-- SCHEMES -->
+
+            <div class="action-card">
+
+                <div class="card-icon scheme-icon">
+                    🏛️
+                </div>
+
+                <h3>
+                    Government Schemes
+                </h3>
+
+                <p>
+                    Discover government schemes and
+                    learn about eligibility and benefits.
+                </p>
+
+                <a href="schemes.html" class="card-btn">
+                    View Schemes →
+                </a>
+
+            </div>
+
+
+            <!-- GOVERNMENT -->
+
+            <div class="action-card">
+
+                <div class="card-icon government-icon">
+                    🏢
+                </div>
+
+                <h3>
+                    How Government Works
+                </h3>
+
+                <p>
+                    Understand how local, district, state
+                    and central government work together.
+                </p>
+
+                <a href="government.html" class="card-btn">
+                    Learn More →
+                </a>
+
+            </div>
+
+
+            <!-- ABOUT -->
+
+            <div class="action-card">
+
+                <div class="card-icon about-icon">
+                    ℹ️
+                </div>
+
+                <h3>
+                    About LokLink
+                </h3>
+
+                <p>
+                    Learn more about our mission and how
+                    LokLink connects citizens with government.
+                </p>
+
+                <a href="about.html" class="card-btn">
+                    About Us →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section class="how-section">
+
+        <div class="section-heading">
+
+            <span>
+                HOW IT WORKS
+            </span>
+
+            <h2>
+                Government at Your Fingertips
+            </h2>
+
+            <p>
+                LokLink makes it easier to understand,
+                access and interact with local government.
+            </p>
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div class="step-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Choose Your Locality
+                </h3>
+
+                <p>
+                    Enter your village, town or locality
+                    to discover relevant information.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div class="step-icon">
+                    🔎
+                </div>
+
+                <h3>
+                    Discover Information
+                </h3>
+
+                <p>
+                    Find representatives, administration,
+                    population and government information.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div class="step-icon">
+                    📝
+                </div>
+
+                <h3>
+                    Take Action
+                </h3>
+
+                <p>
+                    File complaints or explore schemes
+                    available for your area.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    04
+                </div>
+
+                <div class="step-icon">
+                    ✅
+                </div>
+
+                <h3>
+                    Stay Updated
+                </h3>
+
+                <p>
+                    Track your complaint and stay informed
+                    about its progress.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <div>
+
+            <span>
+                HAVE A LOCAL ISSUE?
+            </span>
+
+            <h2>
+                Make Your Voice Heard.
+            </h2>
+
+            <p>
+                Report a local problem and help make
+                your community better.
+            </p>
+
+        </div>
+
+        <a href="complaint.html">
+            File a Complaint →
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <div class="footer-brand">
+
+                <h2>
+                    Lok<span>Link</span>
+                </h2>
+
+                <p>
+                    Your Locality.<br>
+                    Your Voice.<br>
+                    Your Government.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="exploreLocality.html">
+                    Explore Locality
+                </a>
+
+                <a href="complaint.html">
+                    Complaints
+                </a>
+
+                <a href="schemes.html">
+                    Schemes
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Services
+                </h3>
+
+                <a href="track.html">
+                    Track Complaint
+                </a>
+
+                <a href="government.html">
+                    How Government Works
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📧 support@loklink.in
+                </p>
+
+                <p>
+                    📞 +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 LokLink. All Rights Reserved.
+        </div>
+
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <!-- ================= LOGIN POPUP ================= -->
+
+<div id="loginModal" class="modal">
+
+    <div class="modal-box">
+
+        <button class="close-btn" onclick="closeLogin()">
+            ×
+        </button>
+
+        <div class="form-icon">
+            🔐
+        </div>
+
+        <h2>Welcome Back!</h2>
+
+        <p class="form-subtitle">
+            Login to your LokLink account
+        </p>
+
+        <form id="loginForm">
+
+            <label>Email Address</label>
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <div class="form-options">
+
+                <label class="remember">
+                    <input type="checkbox">
+                    Remember me
+                </label>
+
+                <a href="#">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+            <button type="submit" class="form-submit">
+                Login
+            </button>
+
+        </form>
+
+        <p class="switch-form">
+            Don't have an account?
+            <button onclick="switchToRegister()">
+                Register
+            </button>
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- ================= REGISTER POPUP ================= -->
+
+<div id="registerModal" class="modal">
+
+    <div class="modal-box">
+
+        <button class="close-btn" onclick="closeRegister()">
+            ×
+        </button>
+
+        <div class="form-icon">
+            👤
+        </div>
+
+        <h2>Create Account</h2>
+
+        <p class="form-subtitle">
+            Join LokLink today
+        </p>
+
+        <form id="registerForm">
+
+            <label>Full Name</label>
+
+            <input
+                type="text"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label>Email Address</label>
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label>Mobile Number</label>
+
+            <input
+                type="tel"
+                placeholder="Enter your mobile number"
+                required
+            >
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                placeholder="Create a password"
+                required
+            >
+
+            <button type="submit" class="form-submit">
+                Create Account
+            </button>
+
+        </form>
+
+        <p class="switch-form">
+            Already have an account?
+            <button onclick="switchToLogin()">
+                Login
+            </button>
+        </p>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    function openLogin() {
+
+        document.getElementById("loginModal").style.display = "flex";
+
+    }
+
+
+    function closeLogin() {
+
+        document.getElementById("loginModal").style.display = "none";
+
+    }
+
+
+    function openRegister() {
+
+        document.getElementById("registerModal").style.display = "flex";
+
+    }
+
+
+    function closeRegister() {
+
+        document.getElementById("registerModal").style.display = "none";
+
+    }
+
+
+    function switchToRegister() {
+
+        closeLogin();
+
+        openRegister();
+
+    }
+
+
+    function switchToLogin() {
+
+        closeRegister();
+
+        openLogin();
+
+    }
+
+
+    /* Close popup when clicking outside the box */
+
+    window.onclick = function(event) {
+
+        if (event.target === document.getElementById("loginModal")) {
+
+            closeLogin();
+
+        }
+
+        if (event.target === document.getElementById("registerModal")) {
+
+            closeRegister();
+
+        }
+
+    }
+
+</script>
+
+<script src="../JS/auth.js"></script>
+<script src="../JS/index.js"></script>
+
+</body>
+
+</html>
