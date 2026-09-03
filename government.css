@@ -1,0 +1,661 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #102a43;
+    background: #ffffff;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    min-height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 5%;
+
+    background: white;
+
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 32px;
+}
+
+.logo h2 {
+    font-size: 25px;
+}
+
+.logo h2 span {
+    color: #159957;
+}
+
+.logo p {
+    font-size: 8px;
+    color: #6b7280;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #263238;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+    color: #159957;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.user-pill {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 14px;
+    border-radius: 999px;
+    background: #eafaf1;
+    color: #159957;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    border: 1px solid #bfe5d0;
+}
+
+.user-icon {
+    font-size: 14px;
+}
+
+.login-btn,
+.register-btn {
+    padding: 9px 16px;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.login-btn {
+    background: white;
+
+    color: #159957;
+
+    border: 1px solid #159957;
+}
+
+.register-btn {
+    background: #159957;
+
+    color: white;
+
+    border: 1px solid #159957;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    padding: 80px 7%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #063b2c,
+            #0d6249
+        );
+
+    color: white;
+}
+
+.hero span,
+.intro span,
+.flow-heading span,
+.representative span {
+    color: #42d98a;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    max-width: 800px;
+
+    margin-top: 12px;
+
+    font-size: 45px;
+}
+
+.hero p {
+    max-width: 650px;
+
+    margin-top: 18px;
+
+    color: #d8eee5;
+
+    line-height: 1.7;
+}
+
+
+/* ================= INTRO ================= */
+
+.intro {
+    width: 75%;
+
+    margin: 75px auto 45px;
+
+    text-align: center;
+}
+
+.intro h2 {
+    margin-top: 10px;
+
+    font-size: 30px;
+}
+
+.intro p {
+    max-width: 700px;
+
+    margin: 15px auto 0;
+
+    color: #667781;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* ================= LEVELS ================= */
+
+.levels {
+    width: 70%;
+
+    margin: auto;
+}
+
+.level-card {
+    display: grid;
+
+    grid-template-columns: 70px 80px 1fr;
+
+    gap: 25px;
+
+    align-items: start;
+
+    padding: 30px;
+
+    border: 1px solid #e5ece9;
+
+    border-radius: 16px;
+
+    background: white;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.level-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.level-number {
+    font-size: 13px;
+
+    font-weight: 800;
+
+    color: #159957;
+}
+
+.level-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #e5f7ed;
+
+    font-size: 30px;
+}
+
+.level-icon.blue {
+    background: #e7f2ff;
+}
+
+.level-icon.orange {
+    background: #fff1dc;
+}
+
+.level-icon.purple {
+    background: #f1e8ff;
+}
+
+.level-icon.red {
+    background: #ffe8e8;
+}
+
+.level-content span {
+    color: #159957;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.level-content h3 {
+    margin-top: 6px;
+
+    font-size: 21px;
+}
+
+.level-content > p {
+    margin-top: 10px;
+
+    color: #667781;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.responsibilities {
+    margin-top: 18px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #edf1ef;
+}
+
+.responsibilities strong {
+    font-size: 12px;
+}
+
+.responsibilities ul {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px 25px;
+
+    margin-top: 10px;
+
+    padding-left: 18px;
+
+    color: #667781;
+
+    font-size: 12px;
+}
+
+.arrow {
+    text-align: center;
+
+    padding: 10px;
+
+    color: #159957;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+
+/* ================= COMPLAINT FLOW ================= */
+
+.complaint-flow {
+    margin-top: 90px;
+
+    padding: 70px 7%;
+
+    background: #f5faf7;
+}
+
+.flow-heading {
+    text-align: center;
+}
+
+.flow-heading h2 {
+    margin-top: 10px;
+
+    font-size: 30px;
+}
+
+.flow-heading p {
+    max-width: 650px;
+
+    margin: 12px auto;
+
+    color: #667781;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.flow {
+    max-width: 1000px;
+
+    margin: 45px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.flow-step {
+    width: 170px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 14px;
+
+    border: 1px solid #e3ebe7;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.flow-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e5f7ed;
+
+    font-size: 25px;
+}
+
+.flow-step h3 {
+    margin-top: 12px;
+
+    font-size: 14px;
+}
+
+.flow-step p {
+    margin-top: 5px;
+
+    color: #89949a;
+
+    font-size: 11px;
+}
+
+.flow-arrow {
+    padding: 15px;
+
+    color: #159957;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+
+/* ================= REPRESENTATIVE ================= */
+
+.representative {
+    width: 86%;
+
+    margin: 70px auto;
+
+    padding: 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-radius: 18px;
+
+    background: #063b2c;
+
+    color: white;
+}
+
+.representative h2 {
+    margin-top: 10px;
+
+    font-size: 28px;
+}
+
+.representative p {
+    max-width: 650px;
+
+    margin-top: 10px;
+
+    color: #c9ddd5;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.representative a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 11px 18px;
+
+    border-radius: 7px;
+
+    background: #42d98a;
+
+    color: #063b2c;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+.rep-icon {
+    font-size: 85px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 50px 7% 18px;
+
+    background: #063b2c;
+
+    color: white;
+}
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1.5fr;
+
+    gap: 50px;
+}
+
+footer h2 span {
+    color: #42d98a;
+}
+
+footer h3 {
+    margin-bottom: 18px;
+
+    font-size: 15px;
+}
+
+footer a {
+    display: block;
+
+    margin-bottom: 11px;
+
+    color: #c9ddd5;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+footer p {
+    color: #c9ddd5;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+.copyright {
+    margin-top: 40px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #477065;
+
+    text-align: center;
+
+    color: #c9ddd5;
+
+    font-size: 12px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        gap: 10px;
+        gap: 15px;
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .levels {
+        width: 85%;
+    }
+
+    .flow {
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    .flow-arrow {
+        display: none;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .intro {
+        width: 88%;
+    }
+
+    .levels {
+        width: 90%;
+    }
+
+    .level-card {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .level-number {
+        font-size: 12px;
+    }
+
+    .representative {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .rep-icon {
+        display: none;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+}
