@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Government Schemes | LokLink</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/schemes.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">🔗</div>
+
+            <div>
+                <h2>Lok<span>Link</span></h2>
+                <p>Your Locality. Your Voice. Your Government.</p>
+            </div>
+
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="exploreLocality.html">Explore Locality</a>
+            <a href="complaint.html">Complaints</a>
+            <a href="schemes.html" class="active">Schemes</a>
+            <a href="track.html">Track</a>
+            <a href="government.html">How Government Works</a>
+            <a href="about.html">About Us</a>
+        </nav>
+
+        <div class="nav-buttons" id="navButtons">
+            <button class="login-btn" onclick="openLogin()">Login</button>
+            <button class="register-btn" onclick="openRegister()">Register</button>
+        </div>
+
+        <div class="user-pill" id="userPill" style="display: none;">
+            <span class="user-icon">👤</span>
+            <span>Welcome</span>
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="page-header">
+
+        <div>
+
+            <span>GOVERNMENT BENEFITS</span>
+
+            <h1>Government Schemes</h1>
+
+            <p>
+                Discover government schemes and services that may
+                be relevant to you and your locality.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH AREA -->
+
+    <section class="scheme-search">
+
+        <div class="search-title">
+
+            <span>FIND A SCHEME</span>
+
+            <h2>Search Government Schemes</h2>
+
+        </div>
+
+        <div class="search-row">
+
+            <input
+                type="text"
+                placeholder="🔍 Search scheme">
+
+            <select>
+
+                <option>Select Category</option>
+
+                <option>Education</option>
+
+                <option>Health</option>
+
+                <option>Housing</option>
+
+                <option>Agriculture</option>
+
+                <option>Employment</option>
+
+                <option>Women & Children</option>
+
+                <option>Senior Citizens</option>
+
+            </select>
+
+            <select>
+
+                <option>Select State</option>
+
+                <option>Punjab</option>
+
+                <option>Haryana</option>
+
+                <option>Himachal Pradesh</option>
+
+                <option>Delhi</option>
+
+                <option>Other</option>
+
+            </select>
+
+            <button>
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+        <div class="heading-row">
+
+            <div>
+
+                <span>POPULAR SCHEMES</span>
+
+                <h2>Explore Government Schemes</h2>
+
+            </div>
+
+            <button class="filter-btn">
+                ⚙ Filter
+            </button>
+
+        </div>
+
+
+        <!-- SCHEME CARDS -->
+
+        <div class="scheme-grid">
+
+
+            <!-- CARD 1 -->
+
+            <div class="scheme-card">
+
+                <div class="scheme-top">
+
+                    <div class="scheme-icon green">
+                        🏠
+                    </div>
+
+                    <span class="central">
+                        Central
+                    </span>
+
+                </div>
+
+                <h3>Housing Assistance Scheme</h3>
+
+                <p>
+                    Financial support for eligible families
+                    to improve or construct housing.
+                </p>
+
+                <div class="scheme-info">
+
+                    <div>
+                        <small>Category</small>
+                        <strong>Housing</strong>
+                    </div>
+
+                    <div>
+                        <small>Level</small>
+                        <strong>Government</strong>
+                    </div>
+
+                </div>
+
+                <button class="details-btn">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="scheme-card">
+
+                <div class="scheme-top">
+
+                    <div class="scheme-icon blue">
+                        🎓
+                    </div>
+
+                    <span class="state">
+                        State
+                    </span>
+
+                </div>
+
+                <h3>Student Education Support</h3>
+
+                <p>
+                    Financial assistance and support for
+                    eligible students pursuing education.
+                </p>
+
+                <div class="scheme-info">
+
+                    <div>
+                        <small>Category</small>
+                        <strong>Education</strong>
+                    </div>
+
+                    <div>
+                        <small>Level</small>
+                        <strong>State</strong>
+                    </div>
+
+                </div>
+
+                <button class="details-btn">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="scheme-card">
+
+                <div class="scheme-top">
+
+                    <div class="scheme-icon orange">
+                        🌾
+                    </div>
+
+                    <span class="central">
+                        Central
+                    </span>
+
+                </div>
+
+                <h3>Farmer Support Scheme</h3>
+
+                <p>
+                    Support and financial assistance for
+                    eligible farmers and agricultural workers.
+                </p>
+
+                <div class="scheme-info">
+
+                    <div>
+                        <small>Category</small>
+                        <strong>Agriculture</strong>
+                    </div>
+
+                    <div>
+                        <small>Level</small>
+                        <strong>Government</strong>
+                    </div>
+
+                </div>
+
+                <button class="details-btn">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+
+            <div class="scheme-card">
+
+                <div class="scheme-top">
+
+                    <div class="scheme-icon pink">
+                        👩
+                    </div>
+
+                    <span class="state">
+                        State
+                    </span>
+
+                </div>
+
+                <h3>Women Welfare Scheme</h3>
+
+                <p>
+                    Government support programs designed
+                    to support women and families.
+                </p>
+
+                <div class="scheme-info">
+
+                    <div>
+                        <small>Category</small>
+                        <strong>Women</strong>
+                    </div>
+
+                    <div>
+                        <small>Level</small>
+                        <strong>State</strong>
+                    </div>
+
+                </div>
+
+                <button class="details-btn">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- CARD 5 -->
+
+            <div class="scheme-card">
+
+                <div class="scheme-top">
+
+                    <div class="scheme-icon purple">
+                        💼
+                    </div>
+
+                    <span class="central">
+                        Central
+                    </span>
+
+                </div>
+
+                <h3>Employment Support</h3>
+
+                <p>
+                    Employment and skill development opportunities
+                    for eligible citizens.
+                </p>
+
+                <div class="scheme-info">
+
+                    <div>
+                        <small>Category</small>
+                        <strong>Employment</strong>
+                    </div>
+
+                    <div>
+                        <small>Level</small>
+                        <strong>Central</strong>
+                    </div>
+
+                </div>
+
+                <button class="details-btn">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- CARD 6 -->
+
+            <div class="scheme-card">
+
+                <div class="scheme-top">
+
+                    <div class="scheme-icon teal">
+                        🏥
+                    </div>
+
+                    <span class="central">
+                        Central
+                    </span>
+
+                </div>
+
+                <h3>Health Assistance</h3>
+
+                <p>
+                    Healthcare support and benefits for
+                    eligible citizens and families.
+                </p>
+
+                <div class="scheme-info">
+
+                    <div>
+                        <small>Category</small>
+                        <strong>Health</strong>
+                    </div>
+
+                    <div>
+                        <small>Level</small>
+                        <strong>Central</strong>
+                    </div>
+
+                </div>
+
+                <button class="details-btn">
+                    View Details →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ELIGIBILITY -->
+
+        <section class="eligibility">
+
+            <div class="eligibility-content">
+
+                <span>NOT SURE WHAT YOU QUALIFY FOR?</span>
+
+                <h2>Check Your Eligibility</h2>
+
+                <p>
+                    Answer a few simple questions and LokLink can
+                    help you identify schemes that may match your
+                    basic profile.
+                </p>
+
+                <button class="check-btn">
+                    Check Eligibility →
+                </button>
+
+            </div>
+
+            <div class="eligibility-icon">
+                🎯
+            </div>
+
+        </section>
+
+
+        <!-- IMPORTANT NOTICE -->
+
+        <div class="notice">
+
+            <div class="notice-icon">
+                ℹ️
+            </div>
+
+            <div>
+
+                <h3>Important</h3>
+
+                <p>
+                    Scheme information should always be verified
+                    through the relevant official government portal
+                    before submitting an application.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>Lok<span>Link</span></h2>
+
+                <p>
+                    Your Locality.<br>
+                    Your Voice.<br>
+                    Your Government.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Explore</h3>
+
+                <a href="index.html">Home</a>
+                <a href="exploreLocality.html">Locality</a>
+                <a href="complaint.html">Complaints</a>
+                <a href="#">Track</a>
+
+            </div>
+
+            <div>
+
+                <h3>Services</h3>
+
+                <a href="schemes.html">Schemes</a>
+                <a href="#">Eligibility</a>
+                <a href="#">How It Works</a>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>📧 support@loklink.in</p>
+                <p>📞 +91 98765 43210</p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 LokLink. All Rights Reserved.
+        </div>
+
+    </footer>
+
+    <script src="../JS/schemes.js"></script>
+
+    <script src="../JS/auth.js"></script>
+</body>
+
+</html>
