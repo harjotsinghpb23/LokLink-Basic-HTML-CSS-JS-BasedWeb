@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #102a43;
+    background: #ffffff;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    min-height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 5%;
+
+    background: white;
+
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 32px;
+}
+
+.logo h2 {
+    font-size: 25px;
+}
+
+.logo h2 span {
+    color: #159957;
+}
+
+.logo p {
+    font-size: 8px;
+    color: #6b7280;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #263238;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+    color: #159957;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.user-pill {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 14px;
+    border-radius: 999px;
+    background: #eafaf1;
+    color: #159957;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    border: 1px solid #bfe5d0;
+}
+
+.user-icon {
+    font-size: 14px;
+}
+
+.login-btn,
+.register-btn {
+    padding: 9px 16px;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.login-btn {
+    background: white;
+    color: #159957;
+    border: 1px solid #159957;
+}
+
+.register-btn {
+    background: #159957;
+    color: white;
+    border: 1px solid #159957;
+}
+
+
+/* ================= HEADER ================= */
+
+.page-header {
+    padding: 70px 7%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #063b2c,
+            #0d6249
+        );
+
+    color: white;
+}
+
+.page-header span,
+.track-search span,
+.complaint-summary span,
+.section-title span {
+    color: #42d98a;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.page-header h1 {
+    margin-top: 12px;
+
+    font-size: 45px;
+}
+
+.page-header p {
+    max-width: 650px;
+
+    margin-top: 15px;
+
+    color: #d8eee5;
+
+    line-height: 1.7;
+}
+
+
+/* ================= SEARCH ================= */
+
+.track-search {
+    width: 70%;
+
+    margin: -35px auto 0;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.13);
+
+    position: relative;
+    z-index: 5;
+}
+
+.track-search h2 {
+    margin-top: 8px;
+
+    font-size: 22px;
+}
+
+.track-input {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.track-input input {
+    flex: 1;
+
+    padding: 15px;
+
+    border: 1px solid #dce3e8;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.track-input input:focus {
+    border-color: #159957;
+}
+
+.track-input button {
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #159957;
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.search-note {
+    margin-top: 10px;
+
+    color: #89949a;
+
+    font-size: 11px;
+}
+
+
+/* ================= MAIN ================= */
+
+.main-content {
+    width: 82%;
+
+    margin: 65px auto 90px;
+}
+
+
+/* ================= SUMMARY ================= */
+
+.complaint-summary {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #e7edeb;
+}
+
+.complaint-summary h2 {
+    margin-top: 8px;
+
+    font-size: 27px;
+}
+
+.status-badge {
+    padding: 10px 16px;
+
+    border-radius: 20px;
+
+    background: #fff4d9;
+
+    color: #a66a00;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* ================= DETAILS ================= */
+
+.details-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.detail-box {
+    padding: 20px;
+
+    background: #f8faf9;
+
+    border-radius: 10px;
+}
+
+.detail-box small {
+    display: block;
+
+    color: #89949a;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+.detail-box strong {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 13px;
+}
+
+
+/* ================= TIMELINE ================= */
+
+.timeline-section {
+    margin-top: 70px;
+}
+
+.section-title h2 {
+    margin-top: 8px;
+
+    font-size: 28px;
+}
+
+.timeline {
+    margin-top: 35px;
+
+    position: relative;
+
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 24px;
+
+    top: 10px;
+
+    bottom: 10px;
+
+    width: 2px;
+
+    background: #dce8e3;
+}
+
+.timeline-item {
+    position: relative;
+
+    display: flex;
+
+    gap: 25px;
+
+    margin-bottom: 38px;
+}
+
+.timeline-icon {
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eef3f1;
+
+    color: #89949a;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.completed .timeline-icon {
+    background: #159957;
+
+    color: white;
+}
+
+.active-step .timeline-icon {
+    background: #fff0cc;
+
+    color: #a66a00;
+}
+
+.timeline-content {
+    padding-top: 5px;
+}
+
+.timeline-content h3 {
+    font-size: 16px;
+}
+
+.timeline-content p {
+    margin-top: 6px;
+
+    max-width: 650px;
+
+    color: #667781;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+.timeline-content small {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #89949a;
+
+    font-size: 11px;
+}
+
+
+/* ================= HELP ================= */
+
+.help-box {
+    margin-top: 70px;
+
+    padding: 25px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    border-radius: 14px;
+
+    background: #f2faf6;
+}
+
+.help-icon {
+    font-size: 30px;
+}
+
+.help-box h3 {
+    font-size: 16px;
+}
+
+.help-box p {
+    margin-top: 5px;
+
+    color: #667781;
+
+    font-size: 12px;
+}
+
+.help-box button {
+    margin-left: auto;
+
+    padding: 11px 18px;
+
+    border: 1px solid #159957;
+
+    border-radius: 7px;
+
+    background: white;
+
+    color: #159957;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 50px 7% 18px;
+
+    background: #063b2c;
+
+    color: white;
+}
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1.5fr;
+
+    gap: 50px;
+}
+
+footer h2 span {
+    color: #42d98a;
+}
+
+footer h3 {
+    margin-bottom: 18px;
+
+    font-size: 15px;
+}
+
+footer a {
+    display: block;
+
+    margin-bottom: 11px;
+
+    color: #c9ddd5;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+footer p {
+    color: #c9ddd5;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+.copyright {
+    margin-top: 40px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #477065;
+
+    text-align: center;
+
+    color: #c9ddd5;
+
+    font-size: 12px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        gap: 10px;
+        gap: 15px;
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .track-search {
+        width: 85%;
+    }
+
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .page-header h1 {
+        font-size: 36px;
+    }
+
+    .track-search {
+        width: 90%;
+    }
+
+    .track-input {
+        flex-direction: column;
+    }
+
+    .track-input button {
+        padding: 13px;
+    }
+
+    .complaint-summary {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .help-box {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .help-box button {
+        margin-left: 0;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+}
