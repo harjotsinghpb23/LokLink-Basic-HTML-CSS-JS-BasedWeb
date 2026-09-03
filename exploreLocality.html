@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Locality | LokLink</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/exploreLocality.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">🔗</div>
+
+            <div>
+                <h2>Lok<span>Link</span></h2>
+                <p>Your Locality. Your Voice. Your Government.</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="exploreLocality.html" class="active">Explore Locality</a>
+            <a href="complaint.html">Complaints</a>
+            <a href="schemes.html">Schemes</a>
+            <a href="track.html">Track</a>
+            <a href="government.html">How Government Works</a>
+            <a href="about.html">About Us</a>
+        </nav>
+
+        <div class="nav-buttons" id="navButtons">
+            <button class="login-btn" onclick="openLogin()">Login</button>
+            <button class="register-btn" onclick="openRegister()">Register</button>
+        </div>
+
+        <div class="user-pill" id="userPill" style="display: none;">
+            <span class="user-icon">👤</span>
+            <span>Welcome</span>
+        </div>
+
+    </header>
+
+
+    <!-- PAGE HERO -->
+
+    <section class="page-hero">
+
+        <div>
+
+            <span>EXPLORE YOUR AREA</span>
+
+            <h1>Know Your Locality</h1>
+
+            <p>
+                Discover important information about your locality,
+                administration and local representatives.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH -->
+
+    <section class="locality-search">
+
+        <h2>Search Your Locality</h2>
+
+        <div class="search-container">
+
+            <input
+                id="villageInput"
+                type="text"
+                placeholder="Enter Village / City">
+
+            <input
+                id="districtInput"
+                type="text"
+                placeholder="Enter District">
+
+            <input
+                id="stateInput"
+                type="text"
+                placeholder="Enter State">
+
+            <button id="searchLocalityBtn" type="button">
+                🔍 Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- LOCALITY INFORMATION -->
+
+    <main class="main-content">
+
+        <div class="location-heading">
+
+            <div>
+                <span>LOCALITY INFORMATION</span>
+
+                <h2 id="localityName">📍 Example Village</h2>
+
+                <p id="localityLocation">Patiala, Punjab, India</p>
+            </div>
+
+            <div class="verified">
+                ✓ Information Verified
+            </div>
+
+        </div>
+
+
+        <!-- INFORMATION CARDS -->
+
+        <div class="info-grid">
+
+            <div class="info-card">
+
+                <div class="info-icon">👥</div>
+
+                <h3>Population</h3>
+
+                <strong id="populationValue">12,500</strong>
+
+                <p>Estimated population</p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">🏘️</div>
+
+                <h3>Government Type</h3>
+
+                <strong id="governmentType">Gram Panchayat</strong>
+
+                <p>Local governing body</p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">🏛️</div>
+
+                <h3>District</h3>
+
+                <strong id="districtValue">Patiala</strong>
+
+                <p>District administration</p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">🏢</div>
+
+                <h3>Block</h3>
+
+                <strong id="blockValue">Example Block</strong>
+
+                <p>Development block</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- GOVERNMENT REPRESENTATIVE -->
+
+        <section class="representative-section">
+
+            <div class="section-title">
+
+                <span>LOCAL GOVERNMENT</span>
+
+                <h2>Your Local Representative</h2>
+
+            </div>
+
+
+            <div class="representative-card">
+
+                <div class="representative-photo">
+                    👤
+                </div>
+
+                <div class="representative-info">
+
+                    <h2 id="representativeName">Representative Name</h2>
+
+                    <p id="representativePosition" class="position">
+                        Sarpanch / Local Head
+                    </p>
+
+                    <p>
+                        Responsible for representing the local
+                        community and supporting local development.
+                    </p>
+
+                    <div class="contact-info">
+
+                        <span>📞 Official Contact</span>
+
+                        <span>📍 Gram Panchayat Office</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ADMINISTRATION -->
+
+        <section class="administration">
+
+            <div class="section-title">
+
+                <span>ADMINISTRATIVE STRUCTURE</span>
+
+                <h2>How Your Local Government Connects</h2>
+
+            </div>
+
+
+            <div class="admin-flow">
+
+                <div class="admin-box">
+                    <div>👥</div>
+                    <h3>Citizens</h3>
+                    <p>You</p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="admin-box">
+                    <div>🏘️</div>
+                    <h3>Gram Panchayat</h3>
+                    <p>Local Level</p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="admin-box">
+                    <div>🏢</div>
+                    <h3>Block</h3>
+                    <p>Development Level</p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="admin-box">
+                    <div>🏛️</div>
+                    <h3>District</h3>
+                    <p>District Level</p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="admin-box">
+                    <div>🇮🇳</div>
+                    <h3>State</h3>
+                    <p>State Government</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GOVERNMENT SERVICES -->
+
+        <section class="services">
+
+            <div class="section-title">
+
+                <span>LOCAL SERVICES</span>
+
+                <h2>Important Government Services</h2>
+
+            </div>
+
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <span>💧</span>
+                    <h3>Water Supply</h3>
+                    <p>Information about local water services.</p>
+                </div>
+
+                <div class="service-card">
+                    <span>💡</span>
+                    <h3>Electricity</h3>
+                    <p>Find information about electricity services.</p>
+                </div>
+
+                <div class="service-card">
+                    <span>🛣️</span>
+                    <h3>Roads & Transport</h3>
+                    <p>Information about local infrastructure.</p>
+                </div>
+
+                <div class="service-card">
+                    <span>🏥</span>
+                    <h3>Health Services</h3>
+                    <p>Find nearby government health facilities.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>Lok<span>Link</span></h2>
+
+                <p>
+                    Your Locality.<br>
+                    Your Voice.<br>
+                    Your Government.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>Explore</h3>
+
+                <a href="index.html">Home</a>
+                <a href="#">Complaints</a>
+                <a href="#">Schemes</a>
+                <a href="#">Track Status</a>
+            </div>
+
+
+            <div>
+                <h3>LokLink</h3>
+
+                <a href="#">About Us</a>
+                <a href="#">How It Works</a>
+                <a href="#">FAQs</a>
+            </div>
+
+
+            <div>
+                <h3>Contact</h3>
+
+                <p>📧 support@loklink.in</p>
+                <p>📞 +91 98765 43210</p>
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 LokLink. All Rights Reserved.
+        </div>
+
+    </footer>
+
+    <script src="../JS/exploreLocality.js"></script>
+
+    <script src="../JS/auth.js"></script>
+</body>
+
+</html>
